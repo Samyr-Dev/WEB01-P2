@@ -1,0 +1,157 @@
+/* src/app/produtos/[id]/detalhe.module.css */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  min-height: 80vh;
+}
+
+.wrapper {
+  display: flex;
+  gap: 3rem;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.imageColumn {
+  flex: 1;
+  max-width: 500px;
+}
+
+.mainImage {
+  width: 100%;
+  height: auto;
+  max-height: 450px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.infoColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.brandBadge {
+  align-self: flex-start;
+  background: #111;
+  color: #00e676;
+  font-weight: bold;
+  font-size: 0.85rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.productName {
+  font-size: 2.2rem;
+  color: #111;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.category {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+}
+
+.priceContainer {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-left: 4px solid #00e676;
+  border-radius: 0 4px 4px 0;
+  margin-bottom: 2rem;
+}
+
+.priceLabel {
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.priceValue {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #111;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.addToCartButton {
+  display: inline-block;
+  text-align: center;
+  background: #00e676;
+  color: #111;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.addToCartButton:hover {
+  background: #00c853;
+}
+
+.backLink {
+  color: #555;
+  text-decoration: none;
+  font-size: 0.95rem;
+  text-align: center;
+  transition: color 0.2s;
+}
+
+.backLink:hover {
+  color: #111;
+}
+
+/* Erro */
+.errorContainer {
+  text-align: center;
+  padding: 5rem 1rem;
+}
+
+.backButton {
+  display: inline-block;
+  margin-top: 1.5rem;
+  background: #111;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* Responsividade (Layout empilhado em telas menores) */
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+  }
+  
+  .imageColumn {
+    max-width: 100%;
+  }
+
+  .productName {
+    font-size: 1.8rem;
+  }
+}

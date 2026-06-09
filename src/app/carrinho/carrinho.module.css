@@ -1,0 +1,43 @@
+/* src/app/carrinho/carrinho.module.css */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+  min-height: 80vh;
+}
+
+.title {
+  font-size: 2.2rem;
+  color: #111;
+  margin-bottom: 2rem;
+}
+
+.box {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.emptyText {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.shopBtn {
+  display: inline-block;
+  background: #111;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.shopBtn:hover {
+  background: #00e676;
+  color: #111;
+}
