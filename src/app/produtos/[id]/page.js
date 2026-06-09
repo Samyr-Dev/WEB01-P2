@@ -3,12 +3,12 @@ import { produtosCopa } from '../../produtosMock';
 import Link from 'next/link';
 import styles from './detalhe.module.css';
 
-// Como essa página apenas exibe os dados baseados na URL, ela pode ser um Server Component (padrão)
-export default function ProdutoDetalhePage({ params }) {
-  // Captura o ID da URL
-  const { id } = params;
+// Transformamos a função da página em ASSÍNCRONA para poder usar o await no params
+export default async function ProdutoDetalhePage({ params }) {
+  // Resolve a Promise do params para obter os dados da URL corretamente
+  const { id } = await params;
   
-  // Busca o produto correspondente no Mock
+  // Busca o produto correspondente no Mock usando o ID resolvido
   const produto = produtosCopa.find((p) => p.id === id);
 
   // Caso o produto não seja encontrado
@@ -42,7 +42,6 @@ export default function ProdutoDetalhePage({ params }) {
           <p className={styles.description}>{produto.descricao}</p>
 
           <div className={styles.actions}>
-            {/* Link simulando a adição ao carrinho */}
             <Link href="/carrinho" className={styles.addToCartButton}>
               Adicionar ao Carrinho 🛒
             </Link>
