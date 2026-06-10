@@ -21,12 +21,43 @@
   max-width: 500px;
 }
 
+.mainImageWrapper {
+  width: 100%;
+  height: 450px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+
 .mainImage {
   width: 100%;
-  height: auto;
-  max-height: 450px;
+  height: 100%;
   object-fit: cover;
-  border-radius: 8px;
+}
+
+.thumbnails {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.thumb {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+.thumb:hover {
+  border-color: #ddd;
+}
+
+.thumbAtivo {
+  border-color: #00e676;
 }
 
 .infoColumn {
@@ -58,7 +89,7 @@
 .category {
   color: #666;
   font-size: 0.95rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .priceContainer {
@@ -66,13 +97,7 @@
   padding: 1rem;
   border-left: 4px solid #00e676;
   border-radius: 0 4px 4px 0;
-  margin-bottom: 2rem;
-}
-
-.priceLabel {
-  display: block;
-  font-size: 0.9rem;
-  color: #666;
+  margin-bottom: 1.5rem;
 }
 
 .priceValue {
@@ -85,7 +110,52 @@
   font-size: 1.1rem;
   color: #444;
   line-height: 1.6;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Estilização da Quantidade */
+.qtdContainer {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.qtdLabel {
+  font-weight: 600;
+  color: #333;
+}
+
+.qtdSeletor {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.qtdBtn {
+  background: #f1f1f1;
+  border: none;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.qtdBtn:hover {
+  background: #e2e2e2;
+}
+
+.qtdInput {
+  width: 60px;
+  border: none;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111;
 }
 
 .actions {
@@ -95,15 +165,14 @@
 }
 
 .addToCartButton {
-  display: inline-block;
-  text-align: center;
   background: #00e676;
   color: #111;
   font-size: 1.1rem;
   font-weight: bold;
   padding: 1rem 2rem;
-  text-decoration: none;
+  border: none;
   border-radius: 6px;
+  cursor: pointer;
   transition: background 0.2s;
 }
 
@@ -116,42 +185,96 @@
   text-decoration: none;
   font-size: 0.95rem;
   text-align: center;
-  transition: color 0.2s;
 }
 
 .backLink:hover {
   color: #111;
+  text-decoration: underline;
 }
 
-/* Erro */
-.errorContainer {
-  text-align: center;
-  padding: 5rem 1rem;
-}
-
-.backButton {
-  display: inline-block;
-  margin-top: 1.5rem;
-  background: #111;
-  color: white;
-  padding: 0.7rem 1.5rem;
-  text-decoration: none;
-  border-radius: 4px;
-}
-
-/* Responsividade (Layout empilhado em telas menores) */
 @media (max-width: 768px) {
   .wrapper {
     flex-direction: column;
     gap: 2rem;
     padding: 1rem;
   }
-  
   .imageColumn {
     max-width: 100%;
   }
-
-  .productName {
-    font-size: 1.8rem;
+  .mainImageWrapper {
+    height: 350px;
   }
+}
+
+/* Adicione isso ao src/app/produtos/[id]/detalhe.module.css */
+
+.mainImageWrapper {
+  position: relative; /* Essencial para as setas flutuarem por cima */
+  width: 100%;
+  height: 450px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+
+/* Estilo geral das setas direcionais */
+.navArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(17, 17, 17, 0.4);
+  color: #00e676;
+  border: none;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+.navArrow:hover {
+  background: rgba(17, 17, 17, 0.8);
+  scale: 1.1;
+}
+
+.arrowLeft {
+  left: 15px;
+}
+
+.arrowRight {
+  right: 15px;
+}
+
+/* Garantia de dimensionamento e proporção das miniaturas */
+.thumbnails {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 1rem;
+  justify-content: flex-start;
+}
+
+.thumb {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.thumb:hover {
+  border-color: #ccc;
+}
+
+.thumbAtivo {
+  border-color: #00e676;
+  transform: scale(1.02);
 }

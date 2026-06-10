@@ -2,11 +2,12 @@
 import Link from 'next/link';
 import styles from './ProductCard.module.css';
 
-export default function ProductCard({ id, nome, marca, preco, imagem }) {
+export default function ProductCard({ id, nome, marca, preco, imagens }) {
   return (
     <div className={styles.card}>
       <div className={styles.imageContainer}>
-        <img src={imagem} alt={nome} className={styles.image} />
+        {/* Lendo o primeiro índice do array de imagens */}
+        <img src={imagens[0]} alt={nome} className={styles.image} />
         <span className={styles.badge}>{marca}</span>
       </div>
       <div className={styles.content}>

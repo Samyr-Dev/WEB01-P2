@@ -42,3 +42,16 @@
     margin: 0 0.7rem;
   }
 }
+
+/* Adicionar no final do src/components/Header/Header.module.css */
+.badge {
+  background-color: #e53935;
+  color: white;
+  border-radius: 50%;
+  padding: 0.15rem 0.45rem;
+  font-size: 0.75rem;
+  margin-left: 0.3rem;
+  font-weight: bold;
+  display: inline-block;
+  vertical-align: middle;
+}
