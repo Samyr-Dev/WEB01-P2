@@ -1,6 +1,6 @@
 /* src/app/produtos/produtos.module.css */
 .mainContainer {
-  max-width: 1200px;
+  max-width: 1400px; /* Aumentado de 1200px para 1400px para esticar as laterais */
   margin: 0 auto;
   padding: 2rem 1rem;
   min-height: 80vh;
@@ -12,9 +12,11 @@
   margin-bottom: 1.5rem;
 }
 
+/* Alterado de 250px para 220px no tamanho mínimo. 
+   Isso força o navegador a espremer 3 ou 4 produtos por linha antes de quebrá-los para baixo */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 2rem;
 }
 

@@ -78,132 +78,128 @@ export const produtosCopa = [
   },
   {
     id: "6",
-    nome: "Camisa Alemanha Home 2026",
+    nome: "Camisa de Treino Alemanha 2026",
     marca: "Adidas",
-    preco: 449.99,
+    preco: 399.99,
     categoria: "Vestuário",
     imagens: [
-      "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=500",
-      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=500",
-      "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=500"
+      "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/ad8d788b983145b9913d29c68367ecd6_9366/Camisa_I_Alemanha_26_Branco_KD8363_21_model.jpg",
+      "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/20617952d9d54db6a420be4fd9e65ceb_9366/Camisa_I_Alemanha_26_Branco_KD8363_23_hover_model.jpg",
+      "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/92780937b5c34520a357214e82ae22a0_9366/Camisa_I_Alemanha_26_Branco_KD8363_25_model.jpg"
     ],
-    descricao: "O tradicional design alemão com listras tecnológicas de resfriamento avançado para alta intensidade."
+    descricao: "Camisa oficial de aquecimento utilizada pela seleção alemã nos treinos preparatórios para o mundial."
   },
   {
     id: "7",
     nome: "Luvas de Goleiro Predator Pro",
     marca: "Adidas",
-    preco: 399.99,
+    preco: 1299.99,
     categoria: "Equipamentos",
     imagens: [
-      "https://images.unsplash.com/photo-1587280501635-68a0e82cd5ff?w=500",
-      "https://images.unsplash.com/photo-1516257984-b1b4d707412e?w=500",
-      "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=500"
+      "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/498c18ec0d0847ebbd1d2448c13bd1a4_9366/Luvas_Predator_Pro_Promo_Hybrid_Branco_IA0840_01_standard.jpg"
     ],
-    descricao: "Máxima aderência em condições secas ou molhadas e proteção por zonas de amortecimento contra impactos."
+    descricao: "Máxima aderência em condições secas ou molhadas e proteção por zonas de amortecimento contra impactos de chutes potentes."
   },
   {
     id: "8",
-    nome: "Chuteira Nike Mercurial Vapor",
+    nome: "Chuteira Nike Mercurial Air Zoom",
     marca: "Nike",
-    preco: 899.99,
+    preco: 1709.99,
     categoria: "Calçados",
     imagens: [
-      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500",
-      "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=500",
-      "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?w=500"
+      "https://imgnike-a.akamaihd.net/768x768/02942716A5.jpg",
+      "https://imgnike-a.akamaihd.net/768x768/02942716A6.jpg",
+      "https://imgnike-a.akamaihd.net/768x768/02942716A7.jpg",
+      "https://imgnike-a.akamaihd.net/768x768/02942716A9.jpg",
+      "https://imgnike-a.akamaihd.net/768x768/02942716A11.jpg"
     ],
-    descricao: "Desenvolvida focando em velocidade bruta e tração multidirecional nos gramados do torneio mundial."
+    descricao: "Desenvolvida com a primeira unidade Zoom Air articulada da Nike focando em velocidade bruta e arranques explosivos."
   },
   {
     id: "9",
-    nome: "Boné Aba Curva Brasil Copa",
+    nome: "Boné Oficial Comissão Técnica Brasil",
     marca: "Nike",
-    preco: 149.99,
+    preco: 179.99,
     categoria: "Acessórios",
     imagens: [
-      "https://images.unsplash.com/photo-1534215754734-18e55d13ce35?w=500",
-      "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=500",
-      "https://images.unsplash.com/photo-1575424909138-46b05e5919ec?w=500"
+      "https://imgnike-a.akamaihd.net/1024x1024/01106115A2.jpg",
+      "https://imgnike-a.akamaihd.net/1024x1024/01106115A1.jpg"
     ],
-    descricao: "Proteção solar com painéis respiráveis estilizados contendo o escudo da seleção cinco vezes campeã."
+    descricao: "Acessório oficial utilizado pela comissão técnica nos bancos de reservas da Copa, feito com tecido Dry-Fit altamente respirável."
   },
   {
     id: "10",
-    nome: "Meião Oficial de Performance",
+    nome: "Meião de Performance Seleções",
     marca: "Puma",
-    preco: 79.99,
+    preco: 89.99,
     categoria: "Vestuário",
     imagens: [
-      "https://images.unsplash.com/photo-1582966772680-860e372bb558?w=500",
-      "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=500",
-      "https://images.unsplash.com/photo-1509281373149-e957c6296406?w=500"
+      "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/91d4781b7aa64a65b2161a88e6049485_9366/Meias_I_Italia_26_Azul_JL8633_01_01_00_standard.jpg",
+      "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/71d3e326406e43d5bad2befa7c696319_9366/Meias_I_Italia_26_Azul_JL8633_41_detail.jpg",
+      "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/41a5cf5823fe442abd7443299b9a0a9b_9366/Meias_I_Italia_26_Azul_JL8633_01_02_hover_standard.jpg",
+      "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/7bc2b2cf6e2d4c9eacbc8ad7670dae97_9366/Meias_I_Italia_26_Azul_JL8633_42_detail.jpg"
     ],
-    descricao: "Amortecimento anatômico inteligente focado nas zonas de maior atrito para prevenção de bolhas."
+    descricao: "Amortecimento anatômico inteligente focado nas zonas de maior impacto com compressão graduada na panturrilha."
   },
   {
     id: "11",
-    nome: "Jaqueta Hino Itália 2026",
+    nome: "Jaqueta de Hino Itália 2026",
     marca: "Puma",
-    preco: 549.99,
+    preco: 599.99,
     categoria: "Vestuário",
     imagens: [
-      "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=500",
-      "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=500",
-      "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=500"
+      "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/83d8bbcc68f74e63b5e6c34db4d83ad5_9366/Jaqueta_Hino_II_Italia_Azul_JY9599_21_model.jpg",
+      "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/49dee8a03d5740ad86f8ab11de4aaead_9366/Jaqueta_Hino_II_Italia_Azul_JY9599_23_hover_model.jpg",
+      "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/24a451bff61345d2a377d373c8e88fc4_9366/Jaqueta_Hino_II_Italia_Azul_JY9599_25_model.jpg"
     ],
-    descricao: "A elegância e a alfaiataria esportiva italiana traduzidas em uma jaqueta de hino confortável e encorpada."
+    descricao: "A clássica elegância e a alfaiataria esportiva da Azzurra traduzidas na jaqueta oficial de perfilamento do hino nacional."
   },
   {
     id: "12",
-    nome: "Mochila de Viagem Seleções",
+    nome: "Mala de Viagem Delegação Adidas",
     marca: "Adidas",
-    preco: 329.99,
+    preco: 459.99,
     categoria: "Acessórios",
     imagens: [
-      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500",
-      "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?w=500",
-      "https://images.unsplash.com/photo-1573148195900-7845dcb9b127?w=500"
+      "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/6953578a2d28401394fa1010fd6f6d01_9366/MALA_DUFFEL_TREINO_DEFENDER_GRANDE_Preto_JZ0606_01_00_standard.jpg",
+      "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/b001fd1cd57240a8bd5ef8afdee75467_9366/MALA_DUFFEL_TREINO_DEFENDER_GRANDE_Preto_JZ0606_02_standard.jpg",
+      "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/1486240123d347c0ae1c693fb43422c6_9366/MALA_DUFFEL_TREINO_DEFENDER_GRANDE_Preto_JZ0606_27_model.jpg",
+      "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/86b6988398e84917ae3eadc95109364a_9366/MALA_DUFFEL_TREINO_DEFENDER_GRANDE_Preto_JZ0606_28_model.jpg"
     ],
-    descricao: "Compartimento acolchoado para notebook e divisórias úmidas isoladas para chuteiras pós-jogo."
+    descricao: "Mala oficial de viagem fornecida para os jogadores durante os deslocamentos entre as sedes do mundial."
   },
   {
     id: "13",
     nome: "Caneleira Carbon Shield Pro",
     marca: "Nike",
-    preco: 189.99,
+    preco: 249.99,
     categoria: "Equipamentos",
     imagens: [
-      "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=500",
-      "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=500",
-      "https://images.unsplash.com/photo-1544698310-74ea9d1c8258?w=500"
+      "https://imgnike-a.akamaihd.net/1024x1024/01562915A2.jpg"
     ],
-    descricao: "Placa de compósito de carbono balístico ultra leve combinada com EVA denso para dispersão de impactos."
+    descricao: "Placa frontal rígida em fibra de carbono balístico ultra leve combinada com espuma densa de amortecimento de impactos."
   },
   {
     id: "14",
-    nome: "Garrafa Térmica Hydration 1L",
+    nome: "Blusa Moletom Viagem Puma Squad",
     marca: "Puma",
-    preco: 159.99,
-    categoria: "Acessórios",
+    preco: 410.56,
+    categoria: "Vestuário",
     imagens: [
-      "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=500",
-      "https://images.unsplash.com/photo-1523362628745-0c100150b504?w=500",
-      "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=500"
+      "https://imgcentauro-a.akamaihd.net/1024x1024/M10WLJ31A2.jpg",
+      "https://imgcentauro-a.akamaihd.net/1024x1024/M10WLJ31A1.jpg"
     ],
-    descricao: "Construção em vácuo de parede dupla de aço inoxidável. Mantém a hidratação gelada por turnos inteiros."
+    descricao: "Blusa de moletom com isolamento térmico macio para garantir o máximo descanso dos atletas nos voos de conexão da Copa."
   },
   {
     id: "15",
-    nome: "Agasalho Completo Japão 2026",
+    nome: "Agasalho Treino Comissão Japão",
     marca: "Adidas",
     preco: 799.99,
     categoria: "Vestuário",
     imagens: [
-      "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=500",
-      "https://images.unsplash.com/photo-1556821813-e5e339fbab5c?w=500",
-      "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=500"
+      "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/493d9a41e80f4be79880aecb01196b53_9366/Jaqueta_Viagem_Japao_Tiro_22_Azul_HD8932_01_laydown.jpg"
     ],
-    descricao: "Estética oriental minimalista unida ao tecido Primegreen tecnológico para máximo conforto e elasticidade."
+    descricao: "Conjunto completo esportivo unindo a estética oriental minimalista da federação japonesa ao tecido Primegreen tecnológico."
   }
 ];

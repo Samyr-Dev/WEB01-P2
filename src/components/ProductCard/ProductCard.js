@@ -4,19 +4,20 @@ import styles from './ProductCard.module.css';
 
 export default function ProductCard({ id, nome, marca, preco, imagens }) {
   return (
-    <div className={styles.card}>
-      <div className={styles.imageContainer}>
-        {/* Lendo o primeiro índice do array de imagens */}
-        <img src={imagens[0]} alt={nome} className={styles.image} />
-        <span className={styles.badge}>{marca}</span>
+    <Link href={`/produtos/${id}`} className={styles.cardLink}>
+      <div className={styles.card}>
+        <div className={styles.imageContainer}>
+          <img src={imagens[0]} alt={nome} className={styles.image} />
+          <span className={styles.badge}>{marca}</span>
+        </div>
+        <div className={styles.content}>
+          <h3 className={styles.title}>{nome}</h3>
+          <p className={styles.price}>R$ {preco.toFixed(2)}</p>
+          <span className={styles.buttonSimulado}>
+            Ver Detalhes
+          </span>
+        </div>
       </div>
-      <div className={styles.content}>
-        <h3 className={styles.title}>{nome}</h3>
-        <p className={styles.price}>R$ {preco.toFixed(2)}</p>
-        <Link href={`/produtos/${id}`} className={styles.button}>
-          Ver Detalhes
-        </Link>
-      </div>
-    </div>
+    </Link>
   );
 }
